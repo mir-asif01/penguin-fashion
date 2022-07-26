@@ -16,3 +16,8 @@
     padding: 8px 16px;
     border-radius: 10px;
 }
+
+.price{
+    color: #EF5B0C;
+    font-weight: bold;
+}
