@@ -13,28 +13,34 @@
 <body>
     <header class="header-bg pb-5 container">
         <!-----------------navigation-------------------->
-    <nav class="row align-items-center">
-        <div class="col-6">
-            <img src="./icons/Logo.png" class="img-fluid w-75" alt="">
-        </div>
-        <div class="col-5">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+             <div>
+                <img src="./icons/Logo.png" class="w-50" alt="">
+            </div>
+              <div>
+                <button class="navbar-toggler position" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                      <a class="nav-link fw-bolder" href="#">Home</a>
-                      <a class="nav-link fw-bolder" href="#">Product</a>
-                      <a class="nav-link fw-bolder" href="#">About Us</a>
-                      <a class="nav-link fw-bolder" href="#">Contact Us</a>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-        </div>
-    </nav>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link fw-semibold f-s"href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fw-semibold f-s" href="#product">Product</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fw-semibold f-s" id="about">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fw-semibold f-s" href="#contact">Contact</a>
+                      </li>
+                    </ul>
+              </div>
+              </div>
+            </div>
+          </nav>
     <!-----------------navigation-------------------->
     <!-----------------banner-section---------------->
     <div class="row container d-flex flex-column-reverse flex-lg-row align-items-center justify-content-evenly ">
@@ -49,7 +55,7 @@
     </div>
     <!-----------------banner-section---------------->
     </header>
-    <main class="container">
+    <main class="container" id="product">
         <!-- Casual-Shoes -->
             <h1 class="text-center my-5">Casual-Shoes</h1>
             <div class="row d-flex justify-content-center align-items-center my-4">
@@ -163,7 +169,8 @@
             </div>
         <!-- formal shoes  -->
     </main>
-    <footer class="container my-5">
+    <!-- about section  -->
+    <section class="container my-5" id="about">
         <div class="row p-2 d-flex flex-column-reverse flex-lg-row justify-content-center align-items-center">
             <div class="col-lg-6 col-sm-12">
                 <div class="row shadow my-3 rounded-3 p-1">
@@ -198,7 +205,25 @@
                 <img src='./icons/XMLID 1.png' class="w-100" alt="">
             </div>
         </div>
-    </footer>
+    </section>
+    <!-- about section  -->
+    <!-- contact section  -->
+    <section class="container-fluid header-bg p-4" id="contact">
+          <div class="mb-3 row">
+            <div class="col-sm-10">
+            <p>Name : <input type="password" class="w-100" id="inputPassword"></p>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <div class="col-sm-10">
+             <p>Text : <input type="password" class="text-area w-100" id="inputPassword"></p>
+            </div>
+          </div>
+          <div class="button">
+            <button class="send-btn">Send Us</button>
+          </div>
+    </section>
+    <!-- contact section  -->
 <script src="./bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 </html>
